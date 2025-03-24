@@ -16,7 +16,7 @@
         </a>
         <nav>
             <ul class="nav-menu">
-                <li><a href="/resources">Resources</a></li>
+                <li><a href="/dashborad/pages/GRl.html">Resources</a></li>
                 <li><a href="/calculator">Carbon Calculator</a></li>
                 <li><a href="/marketplace">Marketplace</a></li>
                 <li><a href="/community">Community</a></li>
@@ -24,8 +24,8 @@
             </ul>
         </nav>
         <div class="auth-buttons">
-            <button class="sign-up">Sign Up</button>
-            <button class="login">Login</button>
+            <button class="sign-up"><a href="/dashborad/pages/signup.html">Sign Up</a></button>
+            <button class="login"><a href="/dashborad/pages/login.html">Login</a></button>
         </div>
     </header>
     <main class="hero">
@@ -38,16 +38,80 @@
         <div class="hero-content">
             <h1>Build a Sustainable Future, Together</h1>
             <p>Discover eco-friendly resources, calculate your carbon footprint, and join a community committed to protecting our planet.</p>
-            <div class="cta-buttons">
-                <button class="btn primary">Find Green Resources</button>
-                <button class="btn secondary">Calculate Your Footprint</button>
-            </div>
         </div>
     </main>
-    <!--GRL here-->
+
+    <section class="green-resources">
+        <h2 class="section-title">Green Resource Locations</h2>
+        <p class="section-description">Find eco-friendly facilities and services in your area</p>
+        <div class="container">
+            <div class="box">
+                <div class="icon-container">
+                    <i class="fas fa-charging-station"></i>
+                </div>
+                <h3>Electric Car Charging Stations</h3>
+                <p>Find nearby charging points for your electric vehicle</p>
+                <button class="eco-btn" onclick="window.open('https://www.google.com/maps', '_blank')">
+                    <i class="fas fa-location-dot"></i> Find Nearby
+                </button>
+            </div>
+            <div class="box">
+                <div class="icon-container">
+                    <i class="fas fa-recycle"></i>
+                </div>
+                <h3>Plastic Recycling Centers</h3>
+                <p>Locate recycling facilities in your neighborhood</p>
+                <button class="eco-btn" onclick="window.open('https://www.google.com/maps', '_blank')">
+                    <i class="fas fa-location-dot"></i> Find Nearby
+                </button>
+            </div>
+            <div class="box">
+                <div class="icon-container">
+                    <i class="fas fa-restroom"></i>
+                </div>
+                <h3>Public Restrooms</h3>
+                <p>Access clean and sustainable public facilities</p>
+                <button class="eco-btn" onclick="window.open('https://www.google.com/maps', '_blank')">
+                    <i class="fas fa-location-dot"></i> Find Nearby
+                </button>
+            </div>
+            <div class="box">
+                <div class="icon-container">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h3>Community Gardens</h3>
+                <p>Join local urban farming initiatives</p>
+                <button class="eco-btn" onclick="window.open('https://www.google.com/maps', '_blank')">
+                    <i class="fas fa-location-dot"></i> Find Nearby
+                </button>
+            </div>
+            <div class="box">
+                <div class="icon-container">
+                    <i class="fas fa-bicycle"></i>
+                </div>
+                <h3>Bicycle Parking & Repair</h3>
+                <p>Find bike-friendly facilities and repair shops</p>
+                <button class="eco-btn" onclick="window.open('https://www.google.com/maps', '_blank')">
+                    <i class="fas fa-location-dot"></i> Find Nearby
+                </button>
+            </div>
+            <div class="box">
+                <div class="icon-container">
+                    <i class="fas fa-dumpster"></i>
+                </div>
+                <h3>Smart Waste Disposal</h3>
+                <p>Locate smart waste management facilities</p>
+                <button class="eco-btn" onclick="window.open('https://www.google.com/maps', '_blank')">
+                    <i class="fas fa-location-dot"></i> Find Nearby
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!--Community Forms-->
     <div class="forum-container">
         <h1 class="forum-title">Community Forum</h1>
+        <p class="section-description">Find eco-friendly facilities and services in your area</p>
         <div class="forum-header">
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="Search discussions...">
