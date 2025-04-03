@@ -7,19 +7,44 @@
     <link rel="logo">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/dashborad/css/main.css">
+    <link rel="stylesheet" href="/dashborad/css/sustainable-agriculture.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-links">
             <a href="#" class="active">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">COMMUNITY HUB</a>
-            <a href="#">DASHBOARD</a>
-            <a href="#">PROFILE</a>
+            <a href="about.html">ABOUT</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">FEATURES</a>
+                <div class="dropdown-content">
+                    <a href="green-locator.html">Green Resource Locator</a>
+                    <a href="carbon-calculator.html">Carbon Footprint Calculator</a>
+                    <a href="sustainability-score.html">Sustainability Score</a>
+                    <a href="eco-challenges.html">Eco-Friendly Challenges</a>
+                    <a href="marketplace.html">Sustainable Marketplace</a>
+                    <a href="community-forums.html">Community Forums</a>
+                    <a href="energy-management.html">Smart Energy Management</a>
+                    <a href="urban-mobility.html">Urban Mobility</a>
+                    <a href="recycling.html">Recycling Platforms</a>
+                    <a href="green-building.html">Green Building</a>
+                    <a href="urban-farming.html">Urban Farming</a>
+                    <a href="infrastructure.html">Resilient Infrastructure</a>
+                    <a href="inclusive-community.html">Inclusive Community</a>
+                    <a href="waste-management.html">Waste Management</a>
+                    <a href="urban-planning.html">Urban Planning Tools</a>
+                </div>
+            </div>
+            <a href="community.html">COMMUNITY HUB</a>
+            <a href="dashboard.html">DASHBOARD</a>
+            <a href="profile.html">PROFILE</a>
         </div>
-        <div class="auth-buttons">
-            <a href="/dashborad/pages/login.html" class="login-btn">LOGIN</a>
-            <a href="/dashborad/pages/signup.html" class="signin-btn">SIGNIN</a>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+            <button class="search-icon" title="Search">
+                <i class="fas fa-search"></i>
+            </button>
         </div>
     </nav>
 
@@ -217,5 +242,13 @@
         </footer>
         <script src="/dashborad/js/login.js"></script>
         <script src="/dashborad/js/signup.js"></script>
+        <script>
+                document.querySelector('.search-icon').addEventListener('click', function() {
+                    document.querySelector('.search-box').classList.toggle('active');
+                    document.querySelector('.search-input').focus();
+                });
+            </script>
+        <script src="/dashborad/js/sustainable-agriculture.js"></script>
+    </main>
 </body>
 </html>
